@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
-public class MyEditorScript : MonoBehaviour
+public class AutomaticBuid : MonoBehaviour
 {
 
     /*static void PerformBuild ()
