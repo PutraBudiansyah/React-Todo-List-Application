@@ -9,7 +9,7 @@ public class MyEditorScript : MonoBehaviour
     
     /*static void PerformBuild ()
      {
-        string[] defaultScenes = { "Assets/Scenes/Demo.unity" };
+        string[] defaultScenes = { "Assets/Demo.unity" };
          BuildPipeline.BuildPlayer(defaultScenes,"./builds/",
          BuildTarget.Android);
      }*/
@@ -18,7 +18,7 @@ public class MyEditorScript : MonoBehaviour
     public static void PerformBuild()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        buildPlayerOptions.scenes = new[] { "Assets/Scenes/Demo.unity"};
+        buildPlayerOptions.scenes = new[] { "Assets/Demo.unity"};
         buildPlayerOptions.locationPathName = "Build";
         buildPlayerOptions.target = BuildTarget.Android;
         buildPlayerOptions.options = BuildOptions.None;
