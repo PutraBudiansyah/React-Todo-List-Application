@@ -21,7 +21,7 @@ public class MyEditorScript : MonoBehaviour
         buildPlayerOptions.scenes = new[] { "Assets/Demo.unity"};
         buildPlayerOptions.locationPathName = "Build";
         buildPlayerOptions.target = BuildTarget.Android;
-        buildPlayerOptions.options = BuildOptions.None;
+        buildPlayerOptions.options = BuildOptions.AcceptExternalModificationsToPlayer;
 
         BuildReport report = BuildPipeline.BuildPlayer(buildPlayerOptions);
         BuildSummary summary = report.summary;
